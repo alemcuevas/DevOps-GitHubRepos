@@ -195,34 +195,33 @@ https://dev.azure.com/login
   - **Test Plans**
   - **Artifacts**
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a20d8710-9938-42e8-8afb-c0ca758f2a85" width="130" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/256fe057-2954-4529-b8af-0697c0910f7f" width="130" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4e82bddb-8f52-40b1-be28-5c18a4a17d35" width="130" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9acea03d-849a-4856-86ef-f3a512097891" width="130" />
+</p>
 
 ---
 
 ### 3. Examina cada sección brevemente
 
 - **Boards:** Crea un work item de prueba.
-- **Repos:** Observa los archivos si tienes código subido.
-- **Pipelines:** Revisa si hay alguna pipeline configurada.
-- **Test Plans y Artifacts:** Solo explora si están habilitados.
+- **Repos:** Observa los archivos.
+- **Pipelines:** Observa el pipeline configurado.
+- **Test Plans y Artifacts:** Explora a detalle.
 
 
----
 
-## 🔄 Parte 3: Comparativa básica
-
-En tu cuaderno o como comentario en GitHub:
-
-- Escribe al menos **3 diferencias** entre GitHub y Azure DevOps.
-- Escribe **1 caso de uso ideal** para cada uno.
-- Describe **una situación donde usarías ambos juntos**.
-
----
-
-## ✅ Resultado esperado
-
-- Has explorado la interfaz y componentes de GitHub.
-- Has recorrido un proyecto en Azure DevOps y reconocido sus servicios clave.
-- Comprender cómo se complementan estas plataformas.
 
 ---
 
