@@ -49,7 +49,7 @@ Un **proyecto** es una unidad de trabajo dentro de una organización. Cada proye
 1. Abre el navegador y accede a: [https://dev.azure.com](https://dev.azure.com)
 2. Inicia sesión con tu cuenta Microsoft.
 
-<img width="596" alt="image" src="https://github.com/user-attachments/assets/24949277-65c2-4746-acda-2d8121ef3640" />
+![image](https://github.com/user-attachments/assets/89159842-925e-445c-9347-b683a998b7e9)
 
 ---
 
