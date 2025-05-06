@@ -78,8 +78,13 @@ Un **proyecto** es una unidad de trabajo dentro de una organización. Cada proye
 
 2. Haz clic en **Create**.
 
+<p align="center">
 <img width="563" alt="image" src="https://github.com/user-attachments/assets/f9bc7dc0-d495-41dc-8ad1-d1dc6e84f0df" />
+</p>
+
+<p align="center">
 <img width="813" alt="image" src="https://github.com/user-attachments/assets/9d6c98c0-3f1d-4cf4-9327-f96a353f464c" />
+</p>
 
 ---
 
