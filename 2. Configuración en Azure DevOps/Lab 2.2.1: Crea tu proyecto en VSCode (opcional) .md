@@ -65,5 +65,3 @@ Modifica este html para generar un front de una pagina principal de banca movil 
 #### Después de algunos prompts y ajustes...
 
 ![image](https://github.com/user-attachments/assets/ae45b36e-e504-48d7-aaa6-1454e926015e)
-
-
