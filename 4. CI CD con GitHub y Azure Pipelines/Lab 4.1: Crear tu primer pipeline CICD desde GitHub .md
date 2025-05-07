@@ -20,6 +20,8 @@ En este laboratorio configurarás tu primer pipeline de CI/CD desde Azure Pipeli
 4. Navega a `Pipelines > Pipelines`
 5. Haz clic en **New Pipeline**
 
+![image](https://github.com/user-attachments/assets/bb4b71b9-3774-495d-8fec-9cce60113188)
+
 ---
 
 ### Configuración inicial
@@ -29,23 +31,44 @@ En este laboratorio configurarás tu primer pipeline de CI/CD desde Azure Pipeli
 3. Busca y selecciona tu repositorio: `alemcuevas/app-banca-movil`
 4. Selecciona **Starter pipeline** o usa un archivo YAML existente
 
+![image](https://github.com/user-attachments/assets/1e340056-50be-458f-b68b-c2f5d13446d9)
+
+![image](https://github.com/user-attachments/assets/55ae5544-ce87-4ad5-9768-4736abbc1999)
+
+![image](https://github.com/user-attachments/assets/3b157cd5-aa58-4f77-8b1f-c1d7875a2221)
+
 ---
 
 ## 🧾 Parte 2: Definir un pipeline básico
 
 Agrega el siguiente contenido al archivo `azure-pipelines.yml`:
 
-- trigger:
-  - branches: include: `main`
+```bash
 
-- pool:
-  - vmImage: `ubuntu-latest`
+trigger:
+  branches:
+    include:
+      - main
 
-- steps:
-  - Instalar Node.js (versión 18)
-  - Ejecutar `npm install`
-  - Ejecutar `npm run test`
-  - Ejecutar `npm run build`
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '18.x'
+    displayName: 'Instalar Node.js 18'
+
+  - script: npm install
+    displayName: 'Instalar dependencias'
+
+  - script: npm run test
+    displayName: 'Ejecutar pruebas'
+
+  - script: npm run build
+    displayName: 'Compilar aplicación'
+```
+![image](https://github.com/user-attachments/assets/67271381-62f7-49b1-94b9-6f86e904d6ef)
 
 Guarda y confirma los cambios para que se guarden directamente en tu repositorio GitHub.
 
