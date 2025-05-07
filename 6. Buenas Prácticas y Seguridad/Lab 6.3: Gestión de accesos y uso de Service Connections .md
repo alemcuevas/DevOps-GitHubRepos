@@ -57,9 +57,9 @@ En este laboratorio aprenderás a controlar quién puede realizar acciones en tu
 ## ⚙️ Parte 3: Usar la Service Connection en el pipeline
 
 1. En tu archivo `azure-pipelines.yml`, en la etapa de despliegue, usa:
-
+```
 azureSubscription: 'SC-Azure-Dev'
-
+```
 2. Prueba el despliegue y verifica en Azure DevOps que la conexión se utilice correctamente
 
 ---
