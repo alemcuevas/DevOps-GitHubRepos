@@ -1,0 +1,36 @@
+### 1. Crea el repositorio en GitHub
+
+1. Abre tu navegador y accede a: [https://github.com/new](https://github.com/new)
+2. Completa los siguientes campos:
+
+   - **Repository name**: `app-banca-movil`
+   - **Description**: `Proyecto web para laboratorio de Azure DevOps - Banca Móvil`
+   - **Visibility**: `Private`
+   - ❌ **No marques** la casilla "Initialize this repository with a README"
+
+3. Haz clic en **"Create repository"**
+
+
+
+
+
+
+
+
+
+
+---
+
+### 2. Conecta tu proyecto local al repositorio remoto
+
+1. Abre una terminal en la raíz del proyecto `app-banca-movil`
+
+2. Ejecuta los siguientes comandos:
+
+```bash
+git init
+git add .
+git commit -m "Primer commit"
+git branch -M main
+git remote add origin https://github.com/tu-usuario/app-banca-movil.git
+git push -u origin main
