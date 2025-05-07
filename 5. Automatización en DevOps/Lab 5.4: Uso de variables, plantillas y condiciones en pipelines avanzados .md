@@ -19,6 +19,7 @@ En este laboratorio usarás **variables personalizadas**, **plantillas reutiliza
 
 2. Define una plantilla de pasos:
 
+```
 parameters:  
   nodeVersion: '18'  
 
@@ -28,18 +29,18 @@ steps:
       versionSpec: ${{ parameters.nodeVersion }}  
   - script: npm install  
     displayName: 'Instalar dependencias'
-
+```
 ---
 
 ## 🧾 Parte 2: Usar variables definidas
 
 1. En la parte superior de tu archivo `azure-pipelines.yml`, agrega:
-
+```
 variables:  
   buildConfig: 'Release'  
   deployEnv: 'dev'  
   runTests: true
-
+```
 2. Usa estas variables en tus pasos:
 
 - script: echo "Entorno de despliegue: $(deployEnv)"  
