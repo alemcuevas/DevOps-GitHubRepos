@@ -22,34 +22,7 @@ En este laboratorio habilitarás mecanismos para escanear tu código y detectar 
 
 ---
 
-## 🛠️ Parte 2: Escaneo manual con Gitleaks
-
-1. Instala [Gitleaks](https://github.com/gitleaks/gitleaks) en tu equipo  
-2. Ejecuta en tu repositorio local:
-
-gitleaks detect --source . --report-format sarif --report-path gitleaks-report.sarif
-
-3. Revisa si hay secretos expuestos en el historial del código
-
-> Puedes incluir este comando en tu pipeline de CI.
-
----
-
-## 🔄 Parte 3: Escaneo automático en Azure Pipelines
-
-1. Agrega la siguiente tarea a tu pipeline de CI (`azure-pipelines.yml`):
-
-- script: |  
-    curl -sL https://github.com/gitleaks/gitleaks/releases/download/v8.18.2/gitleaks-linux-amd64 -o gitleaks  
-    chmod +x gitleaks  
-    ./gitleaks detect --source . --exit-code 1  
-  displayName: 'Escanear secretos con Gitleaks'
-
-2. Si Gitleaks detecta un secreto, la build fallará automáticamente
-
----
-
-## 🔐 Parte 4: Activar protección en GitHub (si aplica)
+## 🔐 Parte 2: Activar protección en GitHub (si aplica)
 
 Si tu repositorio está en GitHub:
 
