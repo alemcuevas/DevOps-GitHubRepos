@@ -17,6 +17,7 @@ En este laboratorio aprenderás a extender tus pipelines de Azure DevOps usando 
 1. Abre tu archivo `azure-pipelines.yml`  
 2. Dentro del `stage: Deploy` (o en un job nuevo), agrega una tarea de tipo `AzureCLI@2`
 
+```
 task: AzureCLI@2  
 inputs:  
   azureSubscription: 'SC-Azure-Dev'  
@@ -25,7 +26,7 @@ inputs:
   inlineScript: |  
     az group create --name rg-app-banca-dev --location eastus  
     az webapp show --name app-banca-dev --resource-group rg-app-banca-dev
-
+```
 > Asegúrate de tener una Service Connection configurada con permisos adecuados.
 
 ---
@@ -47,6 +48,7 @@ inputs:
 
 2. Define un workflow simple:
 
+```
 name: Build and Notify  
 on:  
   push:  
@@ -65,6 +67,7 @@ jobs:
       - run: npm run build  
       - name: Notify Azure DevOps  
         run: curl -X POST https://dev.azure.com/...
+```
 
 > Este último paso puede llamar a un webhook o actualizar un work item en Azure DevOps si lo necesitas.
 
