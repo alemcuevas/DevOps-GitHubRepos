@@ -1,4 +1,4 @@
-# 🧪 Lab 2.2.1: Crea tu proyecto en VSCode (opcional)
+# 🧪 Lab 2.3: Crea tu proyecto en VSCode (opcional)
 
 En este laboratorio crearás un proyecto web moderno utilizando **Vite + React** desde Visual Studio Code. Este proyecto será utilizado como base para integrarse con GitHub y posteriormente con Azure DevOps.
 
