@@ -45,7 +45,8 @@ Agrega el siguiente contenido al archivo `azure-pipelines.yml`:
 
 ```bash
 
-yaml
+name: Build-BancaMovil-$(Date:yyyyMMdd)$(Rev:.r)
+
 trigger:
   branches:
     include:
@@ -55,19 +56,22 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-  - task: AzureCLI@2
+  - task: NodeTool@0
     inputs:
-      azureSubscription: '<nombre-de-tu-service-connection>'
-      scriptType: 'bash'
-      scriptLocation: 'inlineScript'
-      inlineScript: |
-        echo "Subiendo archivos a Azure Blob Static Website..."
-        az storage blob upload-batch -s dist/ -d '$web' --account-name <nombre-de-tu-storage-account>
-    displayName: 'Desplegar contenido estático a Azure'
+      versionSpec: '18.x'
+    displayName: 'Instalar Node.js'
 
+  - script: npm ci
+    displayName: 'Instalar dependencias'
+
+  - script: npm run test
+    displayName: 'Ejecutar pruebas'
+
+  - script: npm run build
+    displayName: 'Ejecutar build'
 ```
 
-![image](https://github.com/user-attachments/assets/c7768cc6-94bf-492b-9bb8-36df18ca532f)
+![image](https://github.com/user-attachments/assets/30c2e14f-9f2f-48de-8d7c-1b747fe7bb01)
 
 Guarda y confirma los cambios para que se guarden directamente en tu repositorio GitHub.
 
@@ -81,6 +85,10 @@ Guarda y confirma los cambios para que se guarden directamente en tu repositorio
 2. Verifica que se haya ejecutado correctamente:
    - Debes ver los pasos ejecutados y sus logs
    - Si hay errores de lint o pruebas, el pipeline fallará
+
+![image](https://github.com/user-attachments/assets/d8447fec-69a1-41db-b909-ad0591147c61)
+
+<img width="791" alt="image" src="https://github.com/user-attachments/assets/06892dec-81b9-49a7-96f6-2cbbde7a9168" />
 
 ---
 
