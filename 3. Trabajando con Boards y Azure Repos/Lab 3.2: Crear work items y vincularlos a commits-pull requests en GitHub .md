@@ -27,6 +27,8 @@ En este laboratorio usarás **Azure Boards** para planificar tareas (work items)
 
 5. Guarda el work item y toma nota de su ID, por ejemplo: `AB#103`
 
+![image](https://github.com/user-attachments/assets/c22aab55-cb2b-4de7-8713-30ead0e0a2ac)
+
 ---
 
 ## 🔗 Parte 2: Vincular un commit a un work item
@@ -37,7 +39,13 @@ En este laboratorio usarás **Azure Boards** para planificar tareas (work items)
 
    - `"Agrega validación de correo electrónico (AB#103)"`
 
+![image](https://github.com/user-attachments/assets/56ea627a-8f8c-4b9a-a0ce-ffe417eeb3c9)
+![image](https://github.com/user-attachments/assets/5817c0a0-9c24-4163-ba13-7a3f554bf255)
+
 4. Haz push al repositorio y crea un **Pull Request** hacia `main` o `develop`
+
+![image](https://github.com/user-attachments/assets/48e385d3-469d-4be2-a786-3a82d7c57c55)
+![image](https://github.com/user-attachments/assets/f590dab1-828b-4571-a803-45d3845aa2ff)
 
 > ✅ Azure DevOps detectará el identificador `AB#103` y enlazará automáticamente el cambio al work item correspondiente.
 
@@ -50,6 +58,8 @@ En este laboratorio usarás **Azure Boards** para planificar tareas (work items)
 3. En la pestaña `Development` verás:
    - El commit vinculado desde GitHub
    - El pull request asociado (si fue creado)
+
+![image](https://github.com/user-attachments/assets/7eef4d67-37bc-4b01-8276-fa8212da5d36)
 
 ---
 
