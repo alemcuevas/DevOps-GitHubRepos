@@ -23,7 +23,10 @@ En este laboratorio crearás un proyecto web moderno utilizando **Vite + React**
 ## 🛠️ Pasos para crear el proyecto
 
 ### 1. Abre VS Code y una terminal integrada
+```
 
+npm create vite@latest app-banca-movil -- --template vanilla
+```
 <p align="center">
 <img width="690" alt="image" src="https://github.com/user-attachments/assets/eb81e0ea-a584-4d9c-97ae-06869be7b8ad" />
 </p>
