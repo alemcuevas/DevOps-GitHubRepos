@@ -41,11 +41,11 @@ En este laboratorio agregarás controles de seguridad y validaciones al pipeline
 ## 📄 Parte 3: Configurar el pipeline para usar el ambiente
 
 En la etapa `Deploy-Prod` del archivo `azure-pipelines.yml`, usa:
-
+```
 environment:  
   name: 'prod'  
   resourceName: 'prod'
-
+```
 Asegúrate de que esta etapa tenga `dependsOn: Deploy-Dev`  
 y se ejecute solo en la rama `main`:
 
