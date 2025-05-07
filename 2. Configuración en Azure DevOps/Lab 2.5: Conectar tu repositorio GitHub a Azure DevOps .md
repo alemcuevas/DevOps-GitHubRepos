@@ -106,6 +106,20 @@ Esta sección permite **configurar aprobaciones manuales y condiciones** antes d
 
 ---
 
+### 3. Agrega tu código a Azure Repos
+
+1. Ve a **Repos** > **Files**
+
+<img width="950" alt="image" src="https://github.com/user-attachments/assets/998d88bb-4671-4de5-bdb4-35895881da8c" />
+
+2. Selecciona tu repositorio a importar:
+
+![image](https://github.com/user-attachments/assets/6b6ad5c1-e870-4113-a6d2-11eea11a5ebf)
+
+![image](https://github.com/user-attachments/assets/725d2820-3e17-411c-ac3f-134bd289c3f4)
+
+![image](https://github.com/user-attachments/assets/5953f47b-ccc2-493b-b5fd-eaa91eeea299)
+
 ## 📚 Recursos adicionales
 
 - [Branch policies](https://learn.microsoft.com/en-us/azure/devops/repos/git/branch-policies)
