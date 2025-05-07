@@ -16,9 +16,9 @@ En este laboratorio configurarás controles en el repositorio `app-banca-movil` 
 
 1. Accede a [https://dev.azure.com](https://dev.azure.com)
 2. Abre el proyecto: `core-banca-ti > app-banca-movil`
-3. Ve a `Repos > Files` y luego haz clic en el engrane (`⚙️`) para entrar a `Repository Settings`
+3. Ve a `Repos > Repositories` y luego haz clic en `Repository Settings`
 
-4. En la sección **Security**, selecciona el repositorio `app-banca-movil`
+4. En la sección **Security**
 
 5. Revisa los permisos para cada grupo:
 
@@ -31,24 +31,7 @@ En este laboratorio configurarás controles en el repositorio `app-banca-movil` 
 
 > ✅ Recomendación: No otorgues permisos directos a usuarios individuales. Usa grupos y roles definidos.
 
----
-
-## 🔍 Parte 2: Integrar validación de código
-
-1. Ve a `Pipelines > Pipelines` y abre tu pipeline de CI (`ci-app-banca`)
-2. Edita el pipeline y agrega una tarea para análisis de calidad:
-
-### Opciones sugeridas:
-
-- **SonarCloud**:
-  - Conecta tu organización de Azure DevOps a [https://sonarcloud.io](https://sonarcloud.io)
-  - Usa una extensión o tarea preconfigurada en el pipeline
-- **ESLint** (para proyectos JavaScript/Node):
-  - Agrega un paso `script: npm run lint`
-- **CodeQL o Microsoft Security DevOps**:
-  - Agrega una tarea de análisis de seguridad o calidad
-
-3. Configura la tarea para que falle el pipeline si hay errores críticos
+![image](https://github.com/user-attachments/assets/85ae4105-5fd2-4d8d-b344-1ff2a61e416e)
 
 ---
 
