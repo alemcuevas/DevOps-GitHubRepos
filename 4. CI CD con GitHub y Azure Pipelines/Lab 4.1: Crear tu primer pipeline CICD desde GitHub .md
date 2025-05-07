@@ -45,6 +45,7 @@ Agrega el siguiente contenido al archivo `azure-pipelines.yml`:
 
 ```bash
 
+yaml
 trigger:
   branches:
     include:
@@ -54,21 +55,19 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-  - task: NodeTool@0
+  - task: AzureCLI@2
     inputs:
-      versionSpec: '18.x'
-    displayName: 'Instalar Node.js 18'
+      azureSubscription: '<nombre-de-tu-service-connection>'
+      scriptType: 'bash'
+      scriptLocation: 'inlineScript'
+      inlineScript: |
+        echo "Subiendo archivos a Azure Blob Static Website..."
+        az storage blob upload-batch -s dist/ -d '$web' --account-name <nombre-de-tu-storage-account>
+    displayName: 'Desplegar contenido estático a Azure'
 
-  - script: npm install
-    displayName: 'Instalar dependencias'
-
-  - script: npm run test
-    displayName: 'Ejecutar pruebas'
-
-  - script: npm run build
-    displayName: 'Compilar aplicación'
 ```
-![image](https://github.com/user-attachments/assets/67271381-62f7-49b1-94b9-6f86e904d6ef)
+
+![image](https://github.com/user-attachments/assets/c7768cc6-94bf-492b-9bb8-36df18ca532f)
 
 Guarda y confirma los cambios para que se guarden directamente en tu repositorio GitHub.
 
