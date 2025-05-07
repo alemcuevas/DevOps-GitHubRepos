@@ -20,6 +20,8 @@ En este laboratorio configurarás políticas sobre la rama `main` del repositori
 3. Dirígete a `Repos > Branches`
 4. Busca la rama `main` y haz clic en los tres puntos `...` > **Branch policies**
 
+![image](https://github.com/user-attachments/assets/5a2e4a89-2f8d-4455-a869-209a6955c909)
+
 ---
 
 ### Activa las siguientes políticas:
@@ -30,7 +32,7 @@ En este laboratorio configurarás políticas sobre la rama `main` del repositori
   - Obligatorio usar `AB#<ID>` en commits o PR
 - **Check for comment resolution**
   - No se permite el merge si hay comentarios sin resolver
-- **Build validation**
+- **Build validation** (opcional)
   - Selecciona una pipeline de CI existente (por ejemplo: `ci-app-banca`)
 - **Limit merge types**
   - Habilita solo "Squash merge"
@@ -39,18 +41,11 @@ En este laboratorio configurarás políticas sobre la rama `main` del repositori
 
 > ✅ Recomendación: Documenta estas políticas en el README interno o en una Wiki del proyecto.
 
----
-
-## 🔐 Parte 2: Bloquear el push directo a `main`
-
-1. En la misma sección de políticas, desactiva:
-   - **Allow users to push directly to this branch**
-
-> ✅ Esto forzará el uso de Pull Requests para cualquier cambio en `main`.
+![image](https://github.com/user-attachments/assets/e827de21-3aa4-44e0-8f88-5bcc452cca31)
 
 ---
 
-## 🔍 Parte 3: Probar las políticas
+## 🔍 Parte 2: Probar las políticas
 
 1. Crea una nueva rama `feature/test-politicas`
 2. Realiza un cambio menor y súbelo a GitHub
