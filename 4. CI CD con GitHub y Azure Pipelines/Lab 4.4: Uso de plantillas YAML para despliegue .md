@@ -35,6 +35,8 @@ En el archivo `templates/deploy-appservice.yml` define lo siguiente:
 
 **Contenido básico de la plantilla:**
 
+```bash
+
 stage: Deploy  
   jobs:  
     - job: DeployApp  
@@ -44,7 +46,7 @@ stage: Deploy
             azureSubscription: $(serviceConnection)  
             appName: $(appName)  
             package: $(packagePath)
-
+```
 > Asegúrate de que los parámetros estén bien nombrados y referenciados con `$(...)` donde se usen dentro del YAML.
 
 ---
